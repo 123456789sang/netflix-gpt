@@ -1,9 +1,11 @@
 import React from 'react'
-
-const Browwse = () => {
+import Header from './Header'
+const Browse = () => {
   return (
-    <div>Browwse</div>
+    <div>
+        <Header />
+    </div>
   )
 }
 
-export default Browwse
+export default Browse

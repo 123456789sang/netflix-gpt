@@ -8,31 +8,31 @@
 • Header Component  
 
 ## Authentication
-• Login Form (Sign In)  
-• Sign Up Form  
-• Form Validation  
-• useRef Hook for Form Inputs  
-• Firebase Setup  
-• Create User (Sign Up)  
-• Sign In API Integration  
-• Update Firebase Profile (name, photo)  
-• Sign Out Functionality  
-• Redux Store with userSlice 
-&#8226;update profile 
-&#8226; Bugfix:Sign up user displayName picture update 
-&#8226;Bugfix: if the user is not logged in redirect /browse page and vice-versa  
-&#8226; Unsubscribe to the onAuthState callback 
-&#8226; Add hard coded to the constant 
-&#8226; Register TMDB create an app and get acces token 
-&#8226; Get data from TMDB now playing movie list api 
-&#8226; Get hook for nowPlayingMovie
-&#8226; create movieSlice
-&#8226; update store with movie data 
-&#8226; Planning for MainContainer &secondary container
-&#8226; fetch data for trailor video
-&#8226; update store with trailor data
-&#8226; Embeded the Youtube video and mke it autoplay and mute 
-&#8226;  tailwind classes make Maincontainer look awesome
+&#8226; Login Form (Sign In) <br>  
+&#8226; Sign Up Form   <br> 
+&#8226; Form Validation   <br> 
+&#8226; useRef Hook for Form Inputs   <br>
+&#8226; Firebase Setup   <br> 
+&#8226; create User (Sign Up)   <br> 
+&#8226; Sign In API Integration   <br>
+&#8226;Update Firebase Profile (name, photo) <br> 
+&#8226; Sign Out Functionality   <br> 
+&#8226; Redux Store with userSlice <br>
+&#8226; Update profile <br>
+&#8226; Bugfix: Sign up user displayName picture update <br>
+&#8226; Bugfix: If the user is not logged in, redirect /browse page and vice-versa <br>
+&#8226; Unsubscribe to the onAuthState callback <br>
+&#8226; Add hard coded data to the constants <br>
+&#8226; Register TMDB, create an app, and get access token <br>
+&#8226; Get data from TMDB "Now Playing" movie list API <br>
+&#8226; Create hook for nowPlayingMovie <br>
+&#8226; Create movieSlice <br>
+&#8226; Update store with movie data <br>
+&#8226; Plan for MainContainer & SecondaryContainer <br>
+&#8226; Fetch data for trailer video <br>
+&#8226; Update store with trailer data <br>
+&#8226; Embed the YouTube video and make it autoplay and mute <br>
+&#8226; Use Tailwind classes to make MainContainer look awesome <br>
 
 ## Features
 

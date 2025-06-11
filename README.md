@@ -17,11 +17,22 @@
 • Sign In API Integration  
 • Update Firebase Profile (name, photo)  
 • Sign Out Functionality  
-• Redux Store with userSlice  
-
-
-  
-
+• Redux Store with userSlice 
+&#8226;update profile 
+&#8226; Bugfix:Sign up user displayName picture update 
+&#8226;Bugfix: if the user is not logged in redirect /browse page and vice-versa  
+&#8226; Unsubscribe to the onAuthState callback 
+&#8226; Add hard coded to the constant 
+&#8226; Register TMDB create an app and get acces token 
+&#8226; Get data from TMDB now playing movie list api 
+&#8226; Get hook for nowPlayingMovie
+&#8226; create movieSlice
+&#8226; update store with movie data 
+&#8226; Planning for MainContainer &secondary container
+&#8226; fetch data for trailor video
+&#8226; update store with trailor data
+&#8226; Embeded the Youtube video and mke it autoplay and mute 
+&#8226;  tailwind classes make Maincontainer look awesome
 
 ## Features
 

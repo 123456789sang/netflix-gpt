@@ -5,15 +5,17 @@ import { checkValidateData } from '../utils/validate';
 import {auth} from "../utils/firebase"
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { useNavigate } from 'react-router-dom';
 import { updateProfile } from 'firebase/auth';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
+import { AVATAR_URL } from '../utils/constant';
+
 const Login = () => {
+
+
     const[isSignInForm,setIsSignInForm]=useState(true);
     const [errorMassage,setErrorMessage]=useState(null);
     const dispatch = useDispatch();
-    const navigate = useNavigate();
     const name = useRef(null);
     const email=useRef(null);
     const password=useRef(null); 
@@ -33,7 +35,7 @@ const Login = () => {
                 // Signed up 
                 const user = userCredential.user;
                    updateProfile(user, {
-                    displayName: nameValue, photoURL:"https://crafttatva.com/cdn/shop/files/a_15_b78a75a1-654b-4d27-a469-b5470dc28b94.jpg?v=1702534782&width=360"
+                    displayName: nameValue, photoURL:AVATAR_URL
                     }).then(() => {
                         const {uid, email,displayName,photoURL} = auth.currentUser;
                        dispatch(
@@ -46,7 +48,6 @@ const Login = () => {
                             photoURL:photoURL
                                 
                         } ))
-                      navigate("/browse")
                     }).catch((error) => {
                     // An error occurred
                     // ...
@@ -69,7 +70,6 @@ const Login = () => {
                 const user = userCredential.user;
              
                 console.log(user);
-                navigate("/browse")
                
                 })
                 .catch((error) => {

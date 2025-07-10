@@ -23,9 +23,8 @@ const useMovieTrailor= (movieId) => {
     useEffect(()=>{
         getMovieVideos();
     },[])  
-  return (
-    <div></div> 
-  )
+  
+  
 }
 
 export default useMovieTrailor 

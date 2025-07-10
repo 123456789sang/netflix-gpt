@@ -1,28 +1,25 @@
-
 import { useSelector } from 'react-redux';
 import useMovieTrailor from '../hooks/useMovieTrailor';
-const VideoBackground = ({movieId}) => {
-    
-    const trailorVideo = useSelector(store=>store.movies.trailorVideo)
 
-    // fetch the trailor video && update the redux 
+const VideoBackground = ({ movieId }) => {
+  useMovieTrailor(movieId); // Fetch trailer and store in Redux
 
-      
-     useMovieTrailor(movieId);
-   return (
-       <div className='w-screen h-screen'>
-            <iframe 
-               className='w-screen h-full aspect-video'
-              width="560"
-               height="315" 
-               src={"https://www.youtube.com/embed/"+trailorVideo?.key+"?&autoplay=1&mute=1"} 
-               title="YouTube video player" 
-               frameBorder="0"
-               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-               
-            />
-       </div>
-   )
-}
+  const trailorVideo = useSelector((store) => store.movies.trailorVideo);
 
-export default VideoBackground
+  if (!trailorVideo?.key) return null;
+
+  return (
+    <div className="absolute top-0 left-0 w-full aspect-video max-h-screen z-[-1] overflow-hidden">
+      <iframe
+        className="w-full h-full"
+        src={`https://www.youtube.com/embed/${trailorVideo.key}?autoplay=1&controls=0&modestbranding=1&rel=0&playsinline=1&enablejsapi=1`}
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowFullScreen
+        title="YouTube Trailer"
+        frameBorder="0"
+      ></iframe>
+    </div>
+  );
+};
+
+export default VideoBackground;

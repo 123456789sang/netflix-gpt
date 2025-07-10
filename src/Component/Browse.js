@@ -10,13 +10,15 @@ const Browse = () => {
     useNowPlayingMovies();   
     
     return (
-        <div>
+        <div className='h-screen' >
             <Header />
             <MainContainer />
-            <SecondaryContainer />
+            <div className="" /> {/* Spacer */}
+               <SecondaryContainer />
+            <div/>
            
         </div>
-  )
+   )
 }
 
-export default Browse
+export default Browse;

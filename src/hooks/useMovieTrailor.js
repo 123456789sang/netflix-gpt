@@ -6,7 +6,7 @@ import{ addTrailorVideo} from '../utils/movieSlice'
 
 
 const useMovieTrailor= (movieId) => {
-
+   
     const dispatch=useDispatch();
     
     const getMovieVideos =async ()=>{

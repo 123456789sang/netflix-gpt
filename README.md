@@ -33,7 +33,14 @@
 &#8226; Update store with trailer data <br>
 &#8226; Embed the YouTube video and make it autoplay and mute <br>
 &#8226; Use Tailwind classes to make MainContainer look awesome <br>
-
+&#8226; Build Secondary Container
+&#8226; Build Movie List
+&#8226; Build Movie Card
+&#8226; TMDB IMG CDN URL
+&#8226; Made The Btowser page Amazing With tailwind
+&#8226; useTopRatedMovies Custom hook
+&#8226; useUpcomingMovies custom hook
+&#8226; 
 ## Features
 
 • Login / Sign Up  

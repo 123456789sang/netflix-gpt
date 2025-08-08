@@ -3,12 +3,12 @@ import { FaPlay } from 'react-icons/fa';
 
 const VideoTitle = ({ title, overview }) => {
   return (
-    <div className=" px-4 md:px-12 lg:px-24 py-6 md:pt-[14%] absolute bg-gradient-to-r from-black/50 to-transparent text-white ">
-      <h1 className="font-bold text-2xl md:text-4xl lg:text-6xl max-w-[90%] md:max-w-[70%] lg:max-w-[40%]">
+    <div className=" px-4 md:px-12 lg:px-24 py-6 md:pt-[15%] absolute bg-gradient-to-r from-black/50 to-transparent text-white ">
+      <h1 className="font-bold text-xl md:text-2xl lg:text-4xl max-w-[90%] md:max-w-[70%] lg:max-w-[40%]">
         {title}
       </h1>
 
-      <p className="py-4 text-sm md:text-base lg:text-lg max-w-[90%] md:max-w-[70%] lg:max-w-[36%]">
+      <p className="py-4 text-sm md:text-base  max-w-[90%] md:max-w-[70%] lg:max-w-[36%]">
         {overview}
       </p>
 

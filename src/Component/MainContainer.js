@@ -12,7 +12,7 @@ const MainContainer = () => {
   const { original_title, overview, id } = mainMovie;
 
   return (
-    <div className="relative w-full h-screen  border-8 border-red-900  ">
+    <div className="relative w-full h-screen   ">
         {/* pt-20 ~ 80px padding top */}
         <div className="absolute top-0 left-0 h-full -z-10">
             <VideoBackground movieId={id} />

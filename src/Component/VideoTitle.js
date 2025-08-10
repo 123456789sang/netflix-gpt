@@ -8,7 +8,7 @@ const VideoTitle = ({ title, overview }) => {
         {title}
       </h1>
 
-      <p className="py-4 text-sm md:text-base  max-w-[90%] md:max-w-[70%] lg:max-w-[36%]">
+      <p className="py-4 text-sm md:text-base  max-w-[90%] md:max-w-[46%] lg:max-w-[36%]">
         {overview}
       </p>
 

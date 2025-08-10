@@ -40,7 +40,10 @@
 &#8226; Made The Btowser page Amazing With tailwind
 &#8226; useTopRatedMovies Custom hook
 &#8226; useUpcomingMovies custom hook
-&#8226; 
+&#8226; Gpt Search page
+&#8226; Gpt Search Bar
+&#8226; (bonus) Multi Language feature in our App
+&#8226;
 ## Features
 
 • Login / Sign Up  

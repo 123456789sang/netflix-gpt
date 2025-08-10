@@ -7,8 +7,8 @@ const SecondaryContainer = () => {
    // console.log(movies);
   return (
     movies&&(
-       <div className='bg-black  border-8 border-blue-950'>
-         {/* only movielist goes to top of main container not whole secondary container so wrap it inside another div  */}
+       <div className='relative  '>
+            <div className="absolute inset-0 mt-40 bg-black z-20"></div>
             <div className="-mt-40 pl-10 relative z-20 ">   
                 <MovieList title={"Now Playing"} movies={movies.nowPlayingMovies} />
                 <MovieList title={"Top Rated"} movies={movies.topRatedMovies} />
